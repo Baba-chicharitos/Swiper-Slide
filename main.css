@@ -65,29 +65,42 @@ a {
   grid-column: 2 / 10;
   grid-row: 2 / 10;
   background-color: #ffdcd3;
-  display: grid;
-  grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(10, 10%);
+  display: flex;
+  justify-content: center;
 }
 
 .photo1 {
   background: url(media/paysage1.png);
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 100%;
+  border-radius: 2%;
+  transform: translate(-10%), rotateZ(2deg);
 }
 
 .photo2 {
   background: url(media/paysage2.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .photo3 {
   background: url(media/paysage3.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .photo4 {
   background: url(media/paysage4.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .photo5 {
   background: url(media/paysage5.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /* font */
