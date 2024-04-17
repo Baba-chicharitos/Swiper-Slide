@@ -7,7 +7,7 @@
 
 body {
   background-color: #feebe7;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
   height: 100vh;
 }
@@ -65,42 +65,76 @@ a {
   grid-column: 2 / 10;
   grid-row: 2 / 10;
   background-color: #ffdcd3;
-  display: flex;
-  justify-content: center;
+  position: relative;
 }
 
 .photo1 {
   background: url(media/paysage1.png);
   background-size: cover;
   background-position: center;
-  width: 40%;
-  height: 100%;
+  width: 30vw;
+  height: 72vh;
   border-radius: 2%;
-  transform: translate(-10%), rotateZ(2deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-120%, -47%) rotateZ(-12deg) scale(0.9);
+  z-index: 1;
 }
 
 .photo2 {
   background: url(media/paysage2.png);
   background-size: cover;
   background-position: center;
+  width: 30vw;
+  height: 72vh;
+  border-radius: 2%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.95);
+  z-index: 5;
 }
 
 .photo3 {
   background: url(media/paysage3.png);
   background-size: cover;
   background-position: center;
+  width: 30vw;
+  height: 72vh;
+  border-radius: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
 }
 
 .photo4 {
   background: url(media/paysage4.png);
   background-size: cover;
   background-position: center;
+  width: 30vw;
+  height: 72vh;
+  border-radius: 2%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-10%, -50%) rotateZ(6deg) scale(0.95);
+  z-index: 5;
 }
 
 .photo5 {
   background: url(media/paysage5.png);
   background-size: cover;
   background-position: center;
+  width: 30vw;
+  height: 72vh;
+  border-radius: 2%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(30%, -47%) rotateZ(12deg) scale(0.9);
+  z-index: 1;
 }
 
 /* font */
