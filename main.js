@@ -12,6 +12,30 @@ let po3 = document.getElementById("point3");
 let po4 = document.getElementById("point4");
 let po5 = document.getElementById("point5");
 let y = 3;
+console.log(y);
+
+document.addEventListener("DOMContentLoaded", () => {
+  pointCount();
+});
+
+function gaucheAll() {
+  console.log("GaucheALL");
+  if (y >= 1) {
+    y = y - 1;
+  } else if (y === 5) {
+    gauche.classList.add("indisponible");
+  }
+}
+gauche.addEventListener("click", gaucheAll);
+
+function droiteAll() {
+  if (y <= 5) {
+    y = y + 1;
+  } else if (y === 0) {
+    gauche.classList.add("indisponible");
+  }
+}
+droite.addEventListener("click", droiteAll);
 
 function reset() {
   p1.classList.remove(
@@ -69,16 +93,12 @@ function reset() {
     "gauche3",
     "gauche4"
   );
-  po1.classList.remove(grand);
-  po2.classList.remove(grand);
-  po3.classList.remove(grand);
-  po4.classList.remove(grand);
-  po5.classList.remove(grand);
+  po1.classList.remove("grand");
+  po2.classList.remove("grand");
+  po3.classList.remove("grand");
+  po4.classList.remove("grand");
+  po5.classList.remove("grand");
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  pointCount();
-});
 
 // valeur du content qui log le placement
 function pointCount() {
@@ -90,29 +110,34 @@ function pointCount() {
     p3.classList.add("gauche2");
     p4.classList.add("gauche3");
     p5.classList.add("gauche4");
+    po1.classList.add("grand");
   } else if (y === 2) {
     p1.classList.add("droite1");
     p2.classList.add("centre");
     p3.classList.add("gauche1");
     p4.classList.add("gauche2");
     p5.classList.add("gauche3");
+    po2.classList.add("grand");
   } else if (y === 3) {
     p1.classList.add("droite2");
     p2.classList.add("droite1");
     p3.classList.add("centre");
     p4.classList.add("gauche1");
     p5.classList.add("gauche2");
+    po3.classList.add("grand");
   } else if (y === 4) {
     p1.classList.add("droite3");
     p2.classList.add("droite2");
     p3.classList.add("droite1");
     p4.classList.add("centre");
     p5.classList.add("gauche1");
+    po4.classList.add("grand");
   } else if (y === 5) {
     p1.classList.add("droite4");
     p2.classList.add("droite3");
     p3.classList.add("droite2");
     p4.classList.add("droite1");
     p5.classList.add("centre");
+    po5.classList.add("grand");
   }
 }

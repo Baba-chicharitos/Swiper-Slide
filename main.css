@@ -87,8 +87,13 @@ a {
   align-self: center;
 }
 
+.indisponible {
+  filter: grayscale(70%);
+  pointer-events: none;
+}
+
 .numImg {
-  width: 20vw;
+  width: 10vw;
   height: 10vh;
   /* border: 1px solid red; */
   position: absolute;
