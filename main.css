@@ -102,16 +102,15 @@ a {
 }
 
 .point {
-  width: 2vw;
-  height: 2vw;
-  background-color: #feebe7;
-  border-radius: 100%;
-  box-shadow: 20px black;
-}
-
-.petit {
   width: 1vw;
   height: 1vw;
+  background-color: #feebe7;
+  border-radius: 100%;
+}
+
+.grand {
+  width: 2vw;
+  height: 2vw;
 }
 
 .photo1 {
@@ -218,114 +217,6 @@ a {
   transform: translate(80%, -38%) rotateZ(31deg) scale(0.6);
   z-index: -1;
 }
-
-/* Position centre */
-/* Position centre */
-/* Position centre */
-
-/* 
-  - P1 transform: translate(-120%, -49%) rotateZ(-15deg) scale(0.8);
-  z-index: 1;
-
-  - P2 transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
-  z-index: 5;
-
-  - P3 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
-  z-index: 10;
-
-  - P4 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
-  z-index: 5;
-
-  - P5 transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
-  z-index: 1;
-*/
-
-/* Position droite +1 */
-/* Position droite +1 */
-/* Position droite +1 */
-
-/* 
-  - P1 transform: translate(-150%, -45%) rotateZ(-25deg) scale(0.7);
-  z-index: 0;
-
-  - P2 transform: translate(-120%, -49%) rotateZ(-15deg) scale(0.8);
-  z-index: 1;
-  
-  - P3 transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
-  z-index: 5;
-
-  - P4 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
-  z-index: 10;
-
-  - P5 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
-  z-index: 5;
-
-*/
-
-/* Position droite +2 */
-/* Position droite +2 */
-/* Position droite +2 */
-
-/* 
-  - P1 transform: translate(-175%, -38%) rotateZ(-31deg) scale(0.6);
-  z-index: -1;
-
-  - P2 transform: translate(-150%, -45%) rotateZ(-25deg) scale(0.7);
-  z-index: 0;
-  
-  - P3 transform: translate(-120%, -49%) rotateZ(-15deg) scale(0.8);
-  z-index: 1;
-
-  - P4 transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
-  z-index: 5;
-
-  - P5 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
-  z-index: 10;
-
-*/
-
-/* Position gauche +1 */
-/* Position gauche +1 */
-/* Position gauche +1 */
-
-/* 
-  - P1 transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
-  z-index: 5;
-  
-  - P2 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
-  z-index: 10;
-  
-  - P3 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
-  z-index: 5;
-  
-  - P4 transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
-  z-index: 1;
-  
-  - P5 transform: translate(50%, -45%) rotateZ(25deg) scale(0.7);
-  z-index: 0;
-
-*/
-
-/* Position gauche +2 */
-/* Position gauche +2 */
-/* Position gauche +2 */
-
-/* 
-  - P1 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
-  z-index: 10;
-
-  - P2 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
-  z-index: 5;
-  
-  - P3 transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
-  z-index: 1;
-
-  - P4 transform: translate(50%, -45%) rotateZ(25deg) scale(0.7);
-  z-index: 0;
-
-  - P5 transform: translate(80%, -38%) rotateZ(31deg) scale(0.6);
-  z-index: -1;
-*/
 
 /* font */
 /* font */
