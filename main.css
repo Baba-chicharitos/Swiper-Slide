@@ -10,6 +10,7 @@ body {
   /* overflow: hidden; */
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 header {
@@ -66,19 +67,51 @@ a {
   grid-row: 2 / 10;
   background-color: #ffdcd3;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: -5;
+  display: grid;
+  grid-template-rows: [a]1fr [b]1fr [c];
+  justify-items: center;
 }
 
 #gauche {
   transform: rotate(90deg);
   z-index: 20;
+  grid-row: a / c;
+  align-self: center;
 }
 
 #droite {
   transform: rotate(-90deg);
   z-index: 20;
+  grid-row: a / c;
+  align-self: center;
+}
+
+.numImg {
+  width: 20vw;
+  height: 10vh;
+  border: 1px solid red;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.point {
+  width: 2vw;
+  height: 2vw;
+  background-color: #feebe7;
+  border-radius: 100%;
+  box-shadow: 20px black;
+}
+
+.petit {
+  width: 1vw;
+  height: 1vw;
 }
 
 .photo1 {
@@ -141,6 +174,51 @@ a {
   top: 50%;
 }
 
+.droite4 {
+  transform: translate(-175%, -38%) rotateZ(-31deg) scale(0.6);
+  z-index: -1;
+}
+
+.droite3 {
+  transform: translate(-150%, -45%) rotateZ(-25deg) scale(0.7);
+  z-index: 0;
+}
+
+.droite2 {
+  transform: translate(-120%, -49%) rotateZ(-15deg) scale(0.8);
+  z-index: 1;
+}
+
+.droite1 {
+  transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
+  z-index: 5;
+}
+
+.centre {
+  transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
+  z-index: 10;
+}
+
+.gauche1 {
+  transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
+  z-index: 5;
+}
+
+.gauche2 {
+  transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
+  z-index: 1;
+}
+
+.gauche3 {
+  transform: translate(50%, -45%) rotateZ(25deg) scale(0.7);
+  z-index: 0;
+}
+
+.gauche4 {
+  transform: translate(80%, -38%) rotateZ(31deg) scale(0.6);
+  z-index: -1;
+}
+
 /* Position centre */
 /* Position centre */
 /* Position centre */
@@ -152,7 +230,7 @@ a {
   - P2 transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
   z-index: 5;
 
-  - P3 transform: translate(-50%);
+  - P3 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
   z-index: 10;
 
   - P4 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
@@ -213,19 +291,40 @@ a {
 /* 
   - P1 transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
   z-index: 5;
-
+  
   - P2 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
   z-index: 10;
   
   - P3 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
   z-index: 5;
-
+  
   - P4 transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
   z-index: 1;
-
+  
   - P5 transform: translate(50%, -45%) rotateZ(25deg) scale(0.7);
   z-index: 0;
 
+*/
+
+/* Position gauche +2 */
+/* Position gauche +2 */
+/* Position gauche +2 */
+
+/* 
+  - P1 transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
+  z-index: 10;
+
+  - P2 transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
+  z-index: 5;
+  
+  - P3 transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
+  z-index: 1;
+
+  - P4 transform: translate(50%, -45%) rotateZ(25deg) scale(0.7);
+  z-index: 0;
+
+  - P5 transform: translate(80%, -38%) rotateZ(31deg) scale(0.6);
+  z-index: -1;
 */
 
 /* font */
