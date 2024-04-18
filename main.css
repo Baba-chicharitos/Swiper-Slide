@@ -90,7 +90,7 @@ a {
 .numImg {
   width: 20vw;
   height: 10vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   top: 100%;
   left: 50%;
