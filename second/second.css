@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #feebe7;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: #ffdcd3;
+  border-bottom: 2px solid #f5a898;
+  display: grid;
+  grid-template-columns: [a]1fr [b]1fr [c];
+  grid-template-rows: [a]1fr [b]1fr [c];
+}
+
+h1 {
+  align-self: center;
+  grid-row: a / c;
+  justify-self: center;
+  color: #5c271f;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  grid-row: a / c;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.img {
+  width: 30vw;
+  height: 72vh;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  border-radius: 2%;
+  transition: 500ms;
+}
+
+#photo1 {
+  background: url(../media/voiture1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#photo2 {
+  background: url(../media/voiture2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#photo3 {
+  background: url(../media/voiture3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#photo4 {
+  background: url(../media/voiture4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#photo5 {
+  background: url(../media/voiture5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.droite4 {
+  transform: translate(-175%, -38%) rotateZ(-31deg) scale(0.6);
+  z-index: 1;
+}
+
+.droite3 {
+  transform: translate(-150%, -45%) rotateZ(-25deg) scale(0.7);
+  z-index: 3;
+}
+
+.droite2 {
+  transform: translate(-120%, -49%) rotateZ(-15deg) scale(0.8);
+  z-index: 5;
+}
+
+.droite1 {
+  transform: translate(-90%, -50%) rotateZ(-6deg) scale(0.9);
+  z-index: 10;
+}
+
+.centre {
+  transform: translate(-50%, -50%) rotateZ(0deg) scale(1);
+  z-index: 20;
+}
+
+.gauche1 {
+  transform: translate(-10%, -50%) rotateZ(6deg) scale(0.9);
+  z-index: 10;
+}
+
+.gauche2 {
+  transform: translate(20%, -49%) rotateZ(15deg) scale(0.8);
+  z-index: 5;
+}
+
+.gauche3 {
+  transform: translate(50%, -45%) rotateZ(25deg) scale(0.7);
+  z-index: 3;
+}
+
+.gauche4 {
+  transform: translate(80%, -38%) rotateZ(31deg) scale(0.6);
+  z-index: 1;
+}
