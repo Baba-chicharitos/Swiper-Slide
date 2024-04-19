@@ -176,3 +176,29 @@ a {
   font-weight: 400;
   font-style: normal;
 }
+
+.point {
+  position: absolute;
+  width: 12vw;
+  height: 10vh;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.po {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 100%;
+  background-color: salmon;
+  transition: 500ms;
+}
+
+.grand {
+  width: 2vw;
+  height: 2vw;
+}
