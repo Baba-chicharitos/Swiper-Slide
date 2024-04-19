@@ -154,6 +154,5 @@ a {
 }
 
 .grand {
-  width: 2vw;
-  height: 2vw;
+  scale: 2;
 }

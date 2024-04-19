@@ -245,3 +245,38 @@ function timerRestart() {
 reset();
 countPoint();
 timerRestart();
+
+function open1() {
+  clearInterval(Timer);
+  timerRestart();
+  y = 1;
+  countPoint();
+}
+
+function open2() {
+  clearInterval(Timer);
+  timerRestart();
+  y = 2;
+  countPoint();
+}
+
+function open3() {
+  clearInterval(Timer);
+  timerRestart();
+  y = 3;
+  countPoint();
+}
+
+function open4() {
+  clearInterval(Timer);
+  timerRestart();
+  y = 4;
+  countPoint();
+}
+
+function open5() {
+  clearInterval(Timer);
+  timerRestart();
+  y = 5;
+  countPoint();
+}

@@ -13,6 +13,7 @@ const po5 = document.getElementById("po5");
 let y = 3;
 
 function countPoint() {
+  reset();
   if (y === 1) {
     p1.classList.add("centre");
     p2.classList.add("gauche1");
@@ -143,4 +144,29 @@ function turnRight() {
     countPoint();
   }
   console.log(y);
+}
+
+function open1() {
+  y = 1;
+  countPoint();
+}
+
+function open2() {
+  y = 2;
+  countPoint();
+}
+
+function open3() {
+  y = 3;
+  countPoint();
+}
+
+function open4() {
+  y = 4;
+  countPoint();
+}
+
+function open5() {
+  y = 5;
+  countPoint();
 }
