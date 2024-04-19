@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swiper Slide test</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="shortcut icon" href="ppSwiper.png" />
     <link rel="apple-touch-icon" href="ppSwiper.png" />
   </head>
@@ -18,39 +12,35 @@
     <header>
       <h1 class="chakraFonts">Manuel</h1>
       <ul>
-        <li class="chakraFonts">Passer</li>
-        <li class="chakraFonts">à</li>
-        <li class="chakraFonts">
+        <li>Passer</li>
+        <li>à</li>
+        <li>
           <a href="second/second.html">L'automatique</a>
         </li>
       </ul>
     </header>
-    <div class="content">
-      <div class="cardSlide">
-        <img
-          src="media/angle-petit-bas.png"
-          alt="défilementGauche"
-          id="gauche"
+    <div class="contentCard">
+      <svg viewBox="0 0 320 512" id="left" class="left" onclick="turnLeft()">
+        <path
+          d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
         />
-        <img
-          src="media/angle-petit-bas.png"
-          alt="défilementDroite"
-          id="droite"
+      </svg>
+      <svg viewBox="0 0 320 512" id="right" class="right" onclick="turnRight()">
+        <path
+          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
         />
-        <div class="numImg" id="numImg">
-          <div class="point" id="point1"></div>
-          <div class="point" id="point2"></div>
-          <div class="point grand" id="point3"></div>
-          <div class="point" id="point4"></div>
-          <div class="point" id="point5"></div>
-        </div>
-        <div class="photo1" id="photo1"></div>
-        <div class="photo2" id="photo2"></div>
-        <div class="photo3" id="photo3"></div>
-        <div class="photo4" id="photo4"></div>
-        <div class="photo5" id="photo5"></div>
-      </div>
+      </svg>
     </div>
+    <div class="img" id="photo1"></div>
+    <div class="img" id="photo2"></div>
+    <div class="img" id="photo3"></div>
+    <div class="img" id="photo4"></div>
+    <div class="img" id="photo5"></div>
+    <!-- <img src="media/paysage1.png" id="photo1" />
+    <img src="media/paysage2.png" id="photo2" />
+    <img src="media/paysage3.png" id="photo3" />
+    <img src="media/paysage4.png" id="photo4" />
+    <img src="media/paysage5.png" id="photo5" /> -->
     <script src="main.js" defer></script>
   </body>
 </html>
