@@ -15,7 +15,6 @@ function countPoint() {
     p4.classList.add("gauche3");
     p5.classList.add("gauche4");
     left.classList.add("notAvailable");
-    po1.classList.add("grand");
   } else if (y === 2) {
     p1.classList.add("droite1");
     p2.classList.add("centre");
@@ -23,7 +22,6 @@ function countPoint() {
     p4.classList.add("gauche2");
     p5.classList.add("gauche3");
     left.classList.remove("notAvailable");
-    po2.classList.add("grand");
   } else if (y === 3) {
     p1.classList.add("droite2");
     p2.classList.add("droite1");
@@ -38,7 +36,6 @@ function countPoint() {
     p4.classList.add("centre");
     p5.classList.add("gauche1");
     right.classList.remove("notAvailable");
-    po4.classList.add("grand");
   } else if (y === 5) {
     p1.classList.add("droite4");
     p2.classList.add("droite3");
@@ -46,7 +43,6 @@ function countPoint() {
     p4.classList.add("droite1");
     p5.classList.add("centre");
     right.classList.add("notAvailable");
-    po5.classList.add("grand");
   }
 }
 

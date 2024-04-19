@@ -7,7 +7,33 @@ const p4 = document.getElementById("photo4");
 const p5 = document.getElementById("photo5");
 let y = 3;
 
-function turnLeft() {}
+function turnLeft() {
+  clearInterval(Timer);
+  console.log("Chaudddd");
+  timerRestart();
+  if (y >= 1) {
+    y = y - 1;
+    reset();
+    countPoint();
+  } else if (y < 1) {
+    y = 1;
+    countPoint();
+  }
+}
+
+function turnRight() {
+  clearInterval(Timer);
+  console.log("Froidddd");
+  timerRestart();
+  if (y <= 5) {
+    y = y + 1;
+    reset();
+    countPoint();
+  } else if (y > 5) {
+    y = 5;
+    countPoint();
+  }
+}
 
 function countPoint() {
   reset();
@@ -103,7 +129,7 @@ function reset() {
 }
 
 function timerRestart() {
-  setInterval(decal, 3000);
+  Timer = setInterval(decal, 3000);
 }
 
 function decal() {
