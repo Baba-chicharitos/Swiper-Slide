@@ -64,7 +64,7 @@ a {
   height: auto;
   z-index: 50;
   fill: antiquewhite;
-  transition: 500ms;
+  transition: 1000ms;
 }
 
 .right {
