@@ -65,6 +65,7 @@ a {
   z-index: 50;
   fill: antiquewhite;
   transition: 1000ms;
+  cursor: pointer;
 }
 
 .right {
@@ -77,6 +78,7 @@ a {
   z-index: 50;
   fill: antiquewhite;
   transition: 1000ms;
+  cursor: pointer;
 }
 
 .img {

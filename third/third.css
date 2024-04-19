@@ -106,6 +106,7 @@ a {
   z-index: 50;
   fill: salmon;
   transition: 1000ms;
+  cursor: pointer;
 }
 
 .right {
@@ -118,6 +119,7 @@ a {
   z-index: 50;
   fill: salmon;
   transition: 1000ms;
+  cursor: pointer;
 }
 
 .droite4 {
